@@ -72,7 +72,7 @@ int main(int argc, char** argv)
 
         if ((fp = fopen(filePath, "w")) == NULL)
         {
-                printf("Usage: Unable to open file to read!\n");
+                printf("Usage: Unable to open file to write!\n");
                 return 0;
         }
 
