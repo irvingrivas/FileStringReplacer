@@ -20,7 +20,9 @@ int main(int argc, char** argv)
 
         if (argc != 4)
         {
-                printf("Usage: Please include exactly three arguments, a path, string to replace, and string to replace it with!\n");
+                printf("Usage: Please include exactly three"
+                        "arguments, a path, string to replace"
+                        ", and string to replace it with!\n");
                 return 0;
         }
 
