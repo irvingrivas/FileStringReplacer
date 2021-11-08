@@ -1,5 +1,5 @@
 /*
- * vulnerable2.c
+ * stringreplace.c
  * File String Replace
  * 
  */
