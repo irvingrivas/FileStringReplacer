@@ -1,6 +1,6 @@
 # FileStringReplacer
 
-This executable replaces every string in a UTF-8 encoded text file with another. This is not SED and is a far inferior version of it. There is a fixed size of the file to be modified and it requires a specific file encoding (UTF-8).
+This executable replaces every string in a UTF-8 encoded text file with another. This is not SED and is a far inferior version of it, but was fun to do in C.
 
 Here are some specifications
 * File Size Limit of One MB
