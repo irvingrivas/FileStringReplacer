@@ -46,6 +46,12 @@ int main(int argc, char** argv)
                 return 1;
         }
 
+        if (fclose(fp) < 0)
+        {
+                perror("Error: Unable to close tmp file!\n");
+                return 1;
+        }
+
         n = m = 0; // indicies of fileBuf and fileBufTmp respectively
         oldStr = argv[2];
         newStr = argv[3];
@@ -64,12 +70,6 @@ int main(int argc, char** argv)
                 }
                 else
                         fileBufTmp[m++] = fileBuf[n++];
-        }
-
-        if (fclose(fp) < 0)
-        {
-                perror("Error: Unable to close tmp file!\n");
-                return 1;
         }
 
         if ((fp = fopen(filePath, "w")) == NULL)
